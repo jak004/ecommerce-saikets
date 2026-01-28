@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories - JAK Importation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <a href="index.html" class="logo-link">
+      <img src="images/logo.png" alt="JAK Logo" class="logo">
+    </a>
+  </div>
+  <div class="header-right">
+    <span class="momo">Pay via MoMo: 0536090235</span>
+    <div class="cart" id="cartContainer" title="View Cart">
+      <svg id="cartIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9v9m4-9v9m4-9l2 9"/>
+      </svg>
+      <span id="cartCount">0</span>
+    </div>
+  </div>
+</header>
+
+<section class="categories-page">
+  <h1>Shop by Category</h1>
+  <div class="category-grid">
+    <button onclick="filterCategory('furniture')" class="category-btn">Furniture & Home Decor</button>
+    <button onclick="filterCategory('electronics')" class="category-btn">Electronics & Gadgets</button>
+    <button onclick="filterCategory('kitchen')" class="category-btn">Kitchen & Appliances</button>
+    <button onclick="filterCategory('fashion')" class="category-btn">Fashion & Accessories</button>
+    <button onclick="filterCategory('auto')" class="category-btn">Washroom Equipment</button>
+  </div>
+
+  <div class="product-grid" id="product-grid">
+    <p>Select a category above to see products</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 JAK Importation. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

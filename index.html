@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAK Importation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+  <meta name="theme-color" content="#0056b3">
+
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="header-left">
+    <a href="index.html" class="logo-link">
+      <img src="images/logo.png" alt="JAK Logo" class="logo">
+    </a>
+  </div>
+  <div class="header-right">
+   <!-- <span class="momo">Pay via MoMo: 0536090235</span>-->
+    <div class="cart" id="cartContainer" title="View Cart">
+      <svg id="cartIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m5-9v9m4-9v9m4-9l2 9"/>
+      </svg>
+      <span id="cartCount">0</span>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-text">
+    <h1>Your Trusted Import Plug</h1>
+    <p>Pre-order quality goods, chat to confirm price, and we handle the rest</p>
+    <a href="categories.html" class="btn hero-btn">Shop Now</a>
+  </div>
+</section>
+
+<!-- Categories -->
+ <!-- Categories -->
+<section class="categories">
+  <h2>Shop by Category</h2>
+
+  <div class="category-grid">
+    <a href="categories.html?category=furniture" class="category-btn">
+      Furniture & Home Decor
+    </a>
+
+    <a href="categories.html?category=electronics" class="category-btn">
+      Electronics & Gadgets
+    </a>
+
+    <a href="categories.html?category=kitchen" class="category-btn">
+      Kitchen & Appliances
+    </a>
+
+    <a href="categories.html?category=fashion" class="category-btn">
+      Fashion & Accessories
+    </a>
+
+    <a href="categories.html?category=auto" class="category-btn">
+      Washroom Equipment
+    </a>
+  </div>
+</section>
+
+<!--<section class="categories">
+  <h2>Shop by Category</h2>
+  <div class="category-grid">
+    
+    <button onclick="filterCategory('furniture')" class="category-btn">Furniture & Home Decor</button>
+    <button onclick="filterCategory('electronics')" class="category-btn">Electronics & Gadgets</button>
+    <button onclick="filterCategory('kitchen')" class="category-btn">Kitchen & Appliances</button>
+    <button onclick="filterCategory('fashion')" class="category-btn">Fashion & Accessories</button>
+    <button onclick="filterCategory('auto')" class="category-btn">Washroom Equipment</button>
+  </div>
+</section>
+-->
+<!-- Featured Products -->
+<section class="featured-products">
+  <h2>Popular Items for Pre-Order</h2>
+  <div class="product-grid" id="product-grid"></div>
+</section>
+
+<!-- How It Works -->
+<section class="how-it-works">
+  <h2>How Pre-Order Works</h2>
+  <div class="steps">
+    <div class="step"><h3>1. Browse Products</h3></div>
+    <div class="step"><h3>2. Add to Cart</h3></div>
+    <div class="step"><h3>3. Confirm Price & Delivery on WhatsApp</h3></div>
+    <div class="step"><h3>4. Pay via MoMo & Receive Receipt</h3></div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about">
+  <h2>About JAK Importation</h2>
+  <p>JAK Importation connects Ghana customers to quality goods. Pre-order your favorite items, chat to confirm price, and relax while we handle the importation. Trusted, reliable, and Ghana-focused.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 JAK Importation. All rights reserved.</p>
+  <p>WhatsApp: <a href="https://wa.me/233594940421">Chat Now</a> | MoMo: 0536090235</p>
+</footer>
+<!-- Cart Modal -->
+<!--<div class="cart-modal" id="cartModal" aria-hidden="true">
+  <div class="cart-modal-content">
+    <h2>Your Cart</h2>
+
+    <div id="cartItems"></div>
+
+    <div class="cart-actions">
+      <button id="closeCart" class="btn secondary">Continue Shopping</button>
+      <button id="submitOrder" class="btn primary">Submit Order</button>
+    </div>
+  </div>
+</div>-->
+<div class="cart-modal" id="cartModal" aria-hidden="true">
+  <div class="cart-modal-overlay" id="cartOverlay"></div>
+
+  <div class="cart-modal-content">
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+
+    <div class="cart-actions">
+      <button id="closeCart" class="btn secondary">Continue Shopping</button>
+      <button id="submitOrder" class="btn primary">Submit Order</button>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

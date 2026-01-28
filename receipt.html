@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Receipt - JAK Importation</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { font-family: 'Poppins', sans-serif; padding:20px; background:#f9f9f9; }
+    header { text-align:center; margin-bottom:20px; }
+    .receipt { background:#fff; padding:20px; border-radius:8px; max-width:600px; margin:0 auto; box-shadow:0 0 10px rgba(0,0,0,0.1);}
+    .receipt h1 { text-align:center; color:#0056b3; }
+    .receipt ul { list-style:none; padding:0; }
+    .receipt li { padding:5px 0; border-bottom:1px solid #ddd; }
+    footer { text-align:center; margin-top:20px; color:#555; }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html">
+    <img src="images/logo.png" alt="JAK Logo" class="logo">
+  </a>
+</header>
+
+<section class="receipt">
+  <h1>Order Receipt</h1>
+  <p><strong>Customer Name:</strong> <span id="customerName">-</span></p>
+  <p><strong>Products Ordered:</strong></p>
+  <ul id="productList"></ul>
+  <p><strong>Total Paid:</strong> GHS <span id="totalPaid">0</span></p>
+  <p><strong>Payment Method:</strong> MoMo: <span id="momoNumber">0536090235</span></p>
+  <p><strong>Date:</strong> <span id="date"></span></p>
+  <p>Thank you for ordering with JAK Importation! Screenshot this receipt for your records.</p>
+</section>
+
+<footer>
+  <p>© 2026 JAK Importation. All rights reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  loadCartReceipt(); // populate receipt from cart
+</script>
+
+</body>
+</html>
